@@ -1,37 +1,11 @@
 <!DOCTYPE html>
-<!-- 
-Esta línea le dice al navegador:
-Este documento está escrito usando HTML moderno.
-Esto es lo que normalmente se llama HTML5.
-No se ve en la página, pero es importante 
-para que el navegador interprete correctamente 
-el documento. 
--->
-
 <html lang="en">
-<!-- La etiqueta <html> es el contenedor 
-principal de toda la página.
-Todo lo demás irá dentro de ella.
-El atributo:
-    lang="en"
-significa que el idioma principal de la 
-página será inglés.
-
-Para el portfolio profesional, tiene sentido 
-usar inglés desde el principio. 
--->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihai Minoiu | Robotics Perception Engineer</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- 
-    Esto permite que la página entienda bien caracteres como:
-    á, é, í, ó, ú, ñ, ç, —, ... 
-    --> 
-    <title>
-        Mihai Minoiu | Robotics Perception Engineer
-    </title>
 </head>
 
 <body>
@@ -54,11 +28,11 @@ usar inglés desde el principio.
                 Mihai Minoiu
             </h1>
 
-            <p>
+            <p class="hero-role">
                 Robotics Perception Engineer
             </p>
 
-            <p>
+            <p class="hero-description">
                 Industrial Design Engineer specialized in computer vision,
                 ROS2, visual tracking and embedded AI systems.
             </p>
@@ -68,7 +42,7 @@ usar inglés desde el principio.
                     View Projects
                 </a>
 
-                <a href="assets/documents/Mihai_Minoiu_CV.pdf" class="btn btn-secondary" download>
+                <a href="assets\documets\Mihai_Minoiu_CV.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                     Download CV
                 </a>
 
@@ -78,54 +52,144 @@ usar inglés desde el principio.
             </div>
         </div>
     </header>
+
     <main>
         <section id="about">
             <h2>
                 About
             </h2>
+
             <p>
                 My background connects product design, physical systems and software.
                 I am currently focused on building practical perception systems for robotics.
             </p>
-        </section>
-        <section id="projects">
-            <h2>
-                Projects
-            </h2>
-            <div class="project-grid">
-                <article>
-                    <h3>
-                        Agricultural Robotics Prototype
-                    </h3>
-                    <p>
-                        Embedded vision and actuation system for selective pesticide
-                        application using Jetson and ESP32-based control.
-                    </p>
-                    <p>
-                        Technologies: NVIDIA Jetson Orin Nano, ESP32, Computer Vision, Peristaltic Pumps.
-                    </p>
-                </article>
 
-                <article>
-                    <h3>
-                        Satellite Follower
-                    </h3>
-                    <p>
-                        A multi-threaded pipeline combining detection and tracking 
-                        orchestration for satellite following.
-                    </p>
-
-                    <p>
-                        Technologies: NVIDIA Jetson Orin Nano, YOLOv8, OpenCV, Arducam IMX477, IMU, Reinforcement Learning.
-                    </p>
-                </article>
-            </div>
+            <p>
+                I work on projects that connect computer vision, embedded AI, hardware/software
+                integration, documentation and real-world robotic applications.
+            </p>
         </section>
+
+<section id="projects">
+    <h2>
+        Projects
+    </h2>
+
+    <p>
+        A selection of engineering projects focused on robotics perception,
+        embedded AI, visual tracking, project automation and technical documentation.
+    </p>
+
+    <div class="project-grid">
+        <article>
+            <h3>
+                MEMENTO
+            </h3>
+
+            <p>
+                Memory-Enhanced Modular Event-driven Network for Tracking Orchestration.
+                A modular memory and arbitration layer designed to improve visual tracking robustness.
+            </p>
+
+            <p>
+                Technologies: Python, Computer Vision, Visual Tracking, Event-driven Architecture.
+            </p>
+
+            <p>
+                <a href="https://github.com/Minoiu-Mihai/memento" target="_blank" rel="noopener noreferrer">
+                    View repository
+                </a>
+            </p>
+        </article>
+
+        <article>
+            <h3>
+                Project Forge
+            </h3>
+
+            <p>
+                PowerShell-based CLI tool for generating professional engineering project structures
+                for multidisciplinary technical projects.
+            </p>
+
+            <p>
+                Technologies: PowerShell, CLI, JSON Templates, Engineering Documentation.
+            </p>
+
+            <p>
+                <a href="https://github.com/Minoiu-Mihai/project-forge" target="_blank" rel="noopener noreferrer">
+                    View repository
+                </a>
+            </p>
+        </article>
+
+        <article>
+            <h3>
+                Python Forge
+            </h3>
+
+            <p>
+                CLI tool to scaffold Python projects quickly and consistently,
+                focused on repeatable project setup and developer workflows.
+            </p>
+
+            <p>
+                Technologies: Python, CLI, Project Scaffolding, Automation.
+            </p>
+
+            <p>
+                <a href="https://github.com/Minoiu-Mihai/python-forge" target="_blank" rel="noopener noreferrer">
+                    View repository
+                </a>
+            </p>
+        </article>
+
+        <article>
+            <h3>
+                ROS2 Visual Tracking
+            </h3>
+
+            <p>
+                Real-time ROS2 visual tracking supervisor for embedded robotics,
+                combining segmentation, tracking, confidence gating and reinitialization logic.
+            </p>
+
+            <p>
+                Technologies: ROS2, C++, Computer Vision, Embedded Robotics.
+            </p>
+
+            <p>
+                In development.
+            </p>
+        </article>
+
+        <article>
+            <h3>
+                AGRO-IA
+            </h3>
+
+            <p>
+                Selective phytosanitary application system using computer vision,
+                embedded AI, electronics, CAD and physical actuation.
+            </p>
+
+            <p>
+                Technologies: NVIDIA Jetson, ESP32, Computer Vision, CAD, Electronics.
+            </p>
+
+            <p>
+                In development.
+            </p>
+        </article>
+    </div>
+</section>
+
 
         <section id="stack">
             <h2>
                 Technical Stack
             </h2>
+
             <ul>
                 <li>Python</li>
                 <li>C++</li>
@@ -137,8 +201,13 @@ usar inglés desde el principio.
                 <li>Segmentation</li>
                 <li>Jetson</li>
                 <li>Embedded AI</li>
+                <li>ESP32</li>
+                <li>Electronics Prototyping</li>
                 <li>Industrial Design</li>
                 <li>CATIA V5</li>
+                <li>PowerShell</li>
+                <li>Bash</li>
+                <li>Git / GitHub</li>
             </ul>
         </section>
 
@@ -148,7 +217,7 @@ usar inglés desde el principio.
             </h2>
 
             <p>
-                You can explore my work on GitHub or contact me by email or LinkedIn.
+                You can explore my work on GitHub, download my CV or contact me by email or LinkedIn.
             </p>
 
             <p>
@@ -157,6 +226,12 @@ usar inglés desde el principio.
                 </a>
                 at minoiu.mihai.95@gmail.com
             </p>
+
+            <!-- <p>
+                <a href="assets/documents/Mihai_Minoiu_CV.pdf" target="_blank" rel="noopener noreferrer">
+                    Download CV
+                </a>
+            </p> -->
 
             <p>
                 <a href="https://www.linkedin.com/in/mihai-valentin-minoiu/" target="_blank" rel="noopener noreferrer">
@@ -170,13 +245,13 @@ usar inglés desde el principio.
                 </a>
             </p>
         </section>
-    
     </main>
 
     <footer>
-        <p>© 2026 Mihai Minoiu. Built with HTML, CSS, and GitHub Pages. Portfolio under construction.</p>
+        <p>
+            © 2026 Mihai Minoiu. Built with HTML, CSS, and GitHub Pages.
+        </p>
     </footer>
-
 </body>
 
 </html>
